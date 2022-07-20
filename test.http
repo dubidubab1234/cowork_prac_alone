@@ -1,0 +1,10 @@
+GET http://localhost:1000/hello
+
+###
+POST http://localhost:1000/hello
+Content-Type: application/json
+
+{
+    "id" : 11,
+    "name": "zake"
+}
