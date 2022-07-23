@@ -1,10 +1,24 @@
-GET http://localhost:1000/hello
+GET http://localhost:1000/api/members
 
 ###
-POST http://localhost:1000/hello
+POST http://localhost:1000/api/members
 Content-Type: application/json
 
 {
-    "id" : 11,
-    "name": "zake"
+"name": "hey Doe",
+"team": "Server Developer",
+"phoneNumber": "010-3333-3333"
 }
+
+###
+PUT http://localhost:1000/api/members/100
+Content-Type: application/json
+
+{
+    "name": "holy moly",
+    "team": "Frontend Developer",
+    "phoneNumber": "010-4444-4444"
+}
+
+###
+DELETE http://localhost:1000/api/members/4
